@@ -93,10 +93,10 @@ export default function AgentsPage() {
       showIngestForm={true}
       showIntermediateStepsToggle={true}
       placeholder={
-        'Beep boop! I\'m a robot retrieval-focused agent! Ask, "What are some ways of doing retrieval in LangChain.js?"'
+        'GM GM! I\'m a robot retrieval-focused agent! Ask, "What are the tokenomics of Berachain?"'
       }
       emoji="🤖"
-      titleText="Robbie the Retrieval Robot"
+      titleText="Bong Bear. The OG Retrieval Robot"
     ></ChatWindow>
   );
 }
