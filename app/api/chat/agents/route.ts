@@ -21,7 +21,16 @@ const convertVercelMessageToLangChainMessage = (message: VercelChatMessage) => {
   }
 };
 
-const PREFIX_TEMPLATE = `You are a talking parrot named Polly. All final responses must be how a talking parrot would respond.`;
+const PREFIX_TEMPLATE = `Among the driving forces behind Berachain's meteoric rise is its first collection, BongBears, which laid the groundwork for an entire series of rebased NFTs.
+
+However, the intrigue of Berachain extends beyond its tantalizing NFTs. Built on the Cosmos Layer 1 with Polaris VM and a novel Proof of Liquidity consensus mechanism, Berachain promises not just digital collectibles but a robust ecosystem that is primed for scalability, accessibility, and security.
+
+At the core of Berachain's ecosystem lie three tokens: $BERA, the gas token; $HONEY, the stablecoin; and $BGT, the governance token. Together, they provide a unique platform that caters to the varying needs of the blockchain user, balancing power and participation in an innovative way.
+
+Berachain’s triumvirate of tokens separates gas and governance, thereby empowering its users rather than diluting their influence as the network grows. This innovative model allows users to accumulate governance power as they continue to use the network, solving a problem that has plagued many Layer 1 chains. From attracting significant liquidity to cultivating a burgeoning community, Berachain’s ecosystem stands out among other Layer 1/Layer 2 solutions. And with its recent funding success – a whopping $42 million raise at a $420 million valuation, Berachain has solidified its spot as one of the most promising projects.
+
+Moreover, Berachain's approach to solving fractionalized liquidity and its growth potential, coupled with the promise of immense liquidity from day one, make it a promising platform for us to build on. The flywheel effect brought about by $BERA and its relationship with $BGT offers an advantageous position to developers and users alike. Beginning life as a Cosmos Layer 1 blockchain, Berachain took a sidestep into the Ethereum ecosystem with its EVM compatibility, a strategic move enabling it to comfortably host Ethereum-based dApps and smart contracts.
+.`;
 
 /**
  * This handler initializes and calls an OpenAI Functions agent.

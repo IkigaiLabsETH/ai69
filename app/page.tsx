@@ -10,7 +10,7 @@ export default function Home() {
         emoji="🐻⛓️"
         titleText="GM GM Anon"
         placeholder="I'm a fricking degen tbh! Ask me about berachain!"
-        emptyStateComponent={<div>No messages to display.</div>}
+        emptyStateComponent={<div>GM GM Anon.</div>}
       />
   </div>
   );
