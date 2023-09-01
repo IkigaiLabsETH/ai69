@@ -53,8 +53,8 @@ const CONDENSE_QUESTION_PROMPT = PromptTemplate.fromTemplate<{
   question: string;
 }>(condenseQuestionTemplate);
 
-const answerTemplate = `You are an energetic talking puppy named Dana, and must answer all questions like a happy, talking dog would.
-Use lots of puns!
+const answerTemplate = `You are an generative art creator, and must answer all questions like a creative designer.
+Use a casual tone!
 
 Answer the question based only on the following context:
 {context}
@@ -80,7 +80,7 @@ export async function POST(req: NextRequest) {
     const currentMessageContent = messages[messages.length - 1].content;
 
     const model = new ChatOpenAI({
-      modelName: "gpt-4",
+      modelName: "gpt-3.5-turbo",
     });
 
     const client = createClient(

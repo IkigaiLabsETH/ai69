@@ -1,4 +1,6 @@
 import "./globals.css";
+import { Navbar } from "@/components/Navbar";
+
 
 export default function RootLayout({
   children,
@@ -12,6 +14,7 @@ export default function RootLayout({
           <div style={{ marginBottom: "20px" }}>
             {/* Place your search bar component here */}
           </div>
+          <Navbar></Navbar>
           {children}
         </div>
       </body>
