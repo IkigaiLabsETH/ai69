@@ -2,32 +2,187 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  color: #f8f8f8;
-  background: #131318;
+@font-face {
+  font-family: 'Epilogue';
+  src: url('../public/assets/fonts/epilogue/Epilogue-Variable.woff2') format('woff2'),
+       url('../public/assets/fonts/epilogue/Epilogue-Variable.woff') format('woff'),
+       url('../public/assets/fonts/epilogue/Epilogue-Variable.ttf') format('truetype');
+       font-weight: 100 900;
+       font-display: swap;
+       font-style: normal;
 }
 
-body input,
-body textarea {
-  color: black;
+@font-face {
+  font-family: 'Epilogue';
+  src: url('../public/assets/fonts/epilogue/Epilogue-VariableItalic.woff2') format('woff2'),
+       url('../public/assets/fonts/epilogue/Epilogue-VariableItalic.woff') format('woff'),
+       url('../public/assets/fonts/epilogue/Epilogue-VariableItalic.ttf') format('truetype');
+       font-weight: 100 900;
+       font-display: swap;
+       font-style: italic;
 }
 
-a {
-  color: #2d7bd4;
+@font-face {
+  font-family: 'Boska';
+  src: url('../public/assets/fonts/boska/Boska-Variable.woff2') format('woff2'),
+       url('../public/assets/fonts/boska/Boska-Variable.woff') format('woff'),
+       url('../public/assets/fonts/boska/Boska-Variable.ttf') format('truetype');
+       font-weight: 200 900;
+       font-display: swap;
+       font-style: normal;
 }
 
-a:hover {
-  border-bottom: 1px solid;
+@font-face {
+  font-family: 'Boska';
+  src: url('../public/assets/fonts/boska/Boska-VariableItalic.woff2') format('woff2'),
+       url('../public/assets/fonts/boska/Boska-VariableItalic.woff') format('woff'),
+       url('../public/assets/fonts/boska/Boska-VariableItalic.ttf') format('truetype');
+       font-weight: 200 900;
+       font-display: swap;
+       font-style: italic;
 }
 
-p {
-  margin: 8px 0;
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../public/assets/fonts/satoshi/Satoshi-Variable.woff2') format('woff2'),
+       url('../public/assets/fonts/satoshi/Satoshi-Variable.woff') format('woff'),
+       url('../public/assets/fonts/satoshi/Satoshi-Variable.ttf') format('truetype');
+       font-weight: 300 900;
+       font-display: swap;
+       font-style: normal;
 }
 
-code {
-  color: #ffa500;
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../public/assets/fonts/satoshi/Satoshi-VariableItalic.woff2') format('woff2'),
+       url('../public/assets/fonts/satoshi/Satoshi-VariableItalic.woff') format('woff'),
+       url('../public/assets/fonts/satoshi/Satoshi-VariableItalic.ttf') format('truetype');
+       font-weight: 300 900;
+       font-display: swap;
+       font-style: italic;
 }
 
-li {
-  padding: 4px;
+@layer base {
+  body {
+    font-family: 'Satoshi';
+    background: linear-gradient(-45deg, #31345a, #181925, #111115, #000000);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    padding: 0;
+    margin: 0;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-bold;
+    @apply leading-none;
+    @apply mb-4;
+    @apply tracking-tighter;
+    font-family: 'Epilogue';
+  }
+
+  h1 {
+    @apply text-5xl;
+  }
+  
+  h2 {
+    @apply text-5xl;
+  }
+
+  p {
+    font-family: 'Satoshi';
+    @apply text-gray-300;
+    margin-bottom: 1.5rem;
+  }
+
+  a {
+    @apply transition-colors;
+  }
+
+  a:hover {
+    color: yellow;
+  }
+
+  .boska {
+    font-family: 'Boska';
+  }
+
+  .epilogue {
+    font-family: 'Epilogue';
+    @apply tracking-wide;
+  }
+
+  .satoshi {
+    font-family: 'Satoshi';
+  }
+}
+
+@layer components {
+  .tab {
+    @apply text-lg text-black bg-white border-2 shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] p-2;
+  }
+
+  .tab.inactive {
+    @apply border-black hover:border-red hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[8px_8px_0px_0px_rgba(127,29,29,1)] transition-all hover:text-red;
+  }
+
+  .tab.active {
+    @apply border-white hover:text-yellow text-yellow bg-black hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] p-[10px];
+    color: yellow;
+  }
+}
+
+.Toastify__toast {
+  @apply shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] satoshi font-bold text-black rounded-none border-2 border-black;
+}
+
+.Toastify__progress-bar--info, .Toastify__progress-bar--success, .Toastify__progress-bar--warning, .Toastify__progress-bar--error {
+  @apply bg-black;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+button.send-button {
+  background-color: yellow;
+}
+
+
+.text, .ethereumHeader, .ethereumDetails, .data, .ethereumData, .title, .bitcoinPrice, .EthereumComponent, .EthereumDetails {
+  text-align: center;
+  color: yellow;  
+  font-size: 22px; 
+  width: 100%; 
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: yellow; 
+}
+
+.connect {
+  display: flex;
+  justify-content: flex-end;  
+  padding-top: 2rem;          
+  position: fixed;
+  top: 10px;       
+  right: 40px;     
 }
