@@ -93,7 +93,7 @@ export default function AgentsPage() {
       showIngestForm={true}
       showIntermediateStepsToggle={true}
       placeholder={
-        'GM GM! I\'m a robot retrieval-focused agent! Ask, "What are the tokenomics of Berachain?"'
+        'GM GM! I\'m a robot retrieval-focused agent! Ask, "What is Berachain?"'
       }
       emoji="🤖"
       titleText="Bong Bear. The OG Retrieval Robot"
