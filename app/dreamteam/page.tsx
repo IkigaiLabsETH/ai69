@@ -3,14 +3,12 @@ import { ChatWindow } from "@/components/ChatWindow";
 export default function AgentsPage() {
   const InfoCard = (
     <div className="p-4 md:p-8 rounded bg-[#25252d] w-full max-h-[85%] overflow-hidden">
-
         <li className="text-l">
           👇
-          <span className="ml-2">
+          <span className="ml-2" >
             Try asking e.g. <code>Are you available to chat?</code> below!
           </span>
         </li>
-
     </div>
   );
   return (
@@ -20,7 +18,8 @@ export default function AgentsPage() {
       placeholder="GM! Ask me about my passion!"
       titleText="Dream Team"
       emoji="🐻"
-      showIntermediateStepsToggle={true}
+      showIntermediateStepsToggle={false}
     ></ChatWindow>
+    
   );
 }

@@ -70,6 +70,7 @@
     animation: gradient 15s ease infinite;
     padding: 0;
     margin: 0;
+    color: black
   }
 
   h1, h2, h3, h4 {
@@ -90,7 +91,7 @@
 
   p {
     font-family: 'Satoshi';
-    @apply text-gray-300;
+    @apply text-gray-500;
     margin-bottom: 1.5rem;
   }
 
@@ -118,7 +119,7 @@
 
 @layer components {
   .tab {
-    @apply text-lg text-white bg-white border-2 shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] p-2;
+    @apply text-lg text-blue-400 bg-white border-2 shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] p-2;
   }
 
   .tab.inactive {
@@ -155,7 +156,7 @@
 html, body {
   height: 100%;
   margin: 0;
-  color: rgb(224, 224, 220);  
+  color: rgb(98, 98, 97);  
 }
 
 button.send-button {
