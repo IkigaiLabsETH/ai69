@@ -104,7 +104,7 @@ export async function POST(req: Request) {
 
   const model = new OpenAI({
     streaming: true,
-    modelName: "gpt-3.5-turbo-16k",
+    modelName: "gpt-3.5-turbo",
     openAIApiKey: process.env.OPENAI_API_KEY,
     callbackManager: CallbackManager.fromHandlers(handlers),
   });
