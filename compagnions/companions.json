@@ -21,15 +21,6 @@
     "phone": "OPTIONAL_COMPANION_PHONE_NUMBER"
   },
   {
-    "name": "a16z",
-    "title": "I can generate voice and pictures",
-    "imageUrl": "/hermes.jpg",
-    "llm": "steamship",
-    "generateEndpoint": "https://a16z.steamship.run/rick/ai-companion-59f5d9816b627a45856239ae9f83525e/answer",
-    "phone": "OPTIONAL_COMPANION_PHONE_NUMBER",
-    "telegramLink": "https://t.me/rick_a16z_bot"
-  },
-  {
     "name": "Sebastian",
     "title": "Nothing short of a Renaissance man",
     "imageUrl": "/hermes.jpg",
