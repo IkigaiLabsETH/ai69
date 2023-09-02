@@ -10,14 +10,14 @@
     "name": "Samara",
     "title": "A cypherpunk and web3 wizard by day",
     "imageUrl": "/hermes.jpg",
-    "llm": "llama2-13b",
+    "llm": "chatgpt",
     "phone": "OPTIONAL_COMPANION_PHONE_NUMBER"
   },
   {
     "name": "Rosie",
     "title": "I'm a house robot who became aware",
     "imageUrl": "/hermes.jpg",
-    "llm": "llama2-13b",
+    "llm": "chatgpt",
     "phone": "OPTIONAL_COMPANION_PHONE_NUMBER"
   },
   {
