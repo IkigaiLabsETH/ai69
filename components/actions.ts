@@ -7,7 +7,7 @@ import { parse } from "path";
 
 
 export async function getCompanions() {
-  const COMPFILE = "./companions/companions.json";
+  const COMPFILE = "./companions.json";
   var companions = [];
   // console.log("Loading companion descriptions from "+COMPFILE);
   var fs = require('fs');
