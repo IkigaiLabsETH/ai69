@@ -118,7 +118,7 @@
 
 @layer components {
   .tab {
-    @apply text-lg text-black bg-white border-2 shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] p-2;
+    @apply text-lg text-white bg-white border-2 shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] p-2;
   }
 
   .tab.inactive {
@@ -155,10 +155,12 @@
 html, body {
   height: 100%;
   margin: 0;
+  color: rgb(224, 224, 220);  
 }
 
 button.send-button {
   background-color: yellow;
+  color: black
 }
 
 
