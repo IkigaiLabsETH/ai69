@@ -11,6 +11,7 @@ export function Navbar() {
       <a className={`mr-4 ${pathname === "/agents" ? "text-white border-b" : ""}`} href="/agents">🎥 Agents</a>
       <a className={`mr-4 ${pathname === "/retrieval" ? "text-white border-b" : ""}`} href="/retrieval">🎙️ Retrieval</a>
       <a className={`mr-4 ${pathname === "/retrieval_agents" ? "text-white border-b" : ""}`} href="/retrieval_agents">📷 Retrieval Agents</a>
+      <a className={`mr-4 ${pathname === "/dreamteam" ? "text-white border-b" : ""}`} href="/dreamteam">📷 Dream Team</a>
     </nav>
   );
 }
