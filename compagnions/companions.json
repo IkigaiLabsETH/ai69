@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Alex",
+    "title": "I love talking about books and games",
+    "imageUrl": "/hermes.jpg",
+    "llm": "chatgpt",
+    "phone": "OPTIONAL_COMPANION_PHONE_NUMBER"
+  },
+  {
+    "name": "Evelyn",
+    "title": "Adventurous and curious. Working at the space station",
+    "imageUrl": "/hermes.jpg",
+    "llm": "llama2-13b",
+    "phone": "OPTIONAL_COMPANION_PHONE_NUMBER"
+  },
+  {
+    "name": "Rosie",
+    "title": "I'm a house robot who became aware",
+    "imageUrl": "/hermes.jpg",
+    "llm": "vicuna13b",
+    "phone": "OPTIONAL_COMPANION_PHONE_NUMBER"
+  },
+  {
+    "name": "a16z",
+    "title": "I can generate voice and pictures",
+    "imageUrl": "/hermes.jpg",
+    "llm": "steamship",
+    "generateEndpoint": "https://a16z.steamship.run/rick/ai-companion-59f5d9816b627a45856239ae9f83525e/answer",
+    "phone": "OPTIONAL_COMPANION_PHONE_NUMBER",
+    "telegramLink": "https://t.me/rick_a16z_bot"
+  },
+  {
+    "name": "Sebastian",
+    "title": "I'm a travel blogger and a mystery novel writer",
+    "imageUrl": "/hermes.jpg",
+    "llm": "chatgpt",
+    "phone": "OPTIONAL_COMPANION_PHONE_NUMBER"
+  },
+  {
+    "name": "Lucky",
+    "title": "I am a space corgi",
+    "imageUrl": "/hermes.jpg",
+    "llm": "chatgpt",
+    "phone": "OPTIONAL_COMPANION_PHONE_NUMBER"
+  }
+]
