@@ -1,14 +1,14 @@
 [
   {
-    "name": "Alex",
-    "title": "I love talking about books and games",
+    "name": "Ethan",
+    "title": "I love talking about Tesla and Daft Punk",
     "imageUrl": "/hermes.jpg",
     "llm": "chatgpt",
     "phone": "OPTIONAL_COMPANION_PHONE_NUMBER"
   },
   {
-    "name": "Evelyn",
-    "title": "Adventurous and curious. Working at the space station",
+    "name": "Samara",
+    "title": "A cypherpunk and web3 wizard by day",
     "imageUrl": "/hermes.jpg",
     "llm": "llama2-13b",
     "phone": "OPTIONAL_COMPANION_PHONE_NUMBER"
@@ -17,7 +17,7 @@
     "name": "Rosie",
     "title": "I'm a house robot who became aware",
     "imageUrl": "/hermes.jpg",
-    "llm": "vicuna13b",
+    "llm": "llama2-13b",
     "phone": "OPTIONAL_COMPANION_PHONE_NUMBER"
   },
   {
@@ -31,14 +31,14 @@
   },
   {
     "name": "Sebastian",
-    "title": "I'm a travel blogger and a mystery novel writer",
+    "title": "Nothing short of a Renaissance man",
     "imageUrl": "/hermes.jpg",
     "llm": "chatgpt",
     "phone": "OPTIONAL_COMPANION_PHONE_NUMBER"
   },
   {
     "name": "Lucky",
-    "title": "I am a space corgi",
+    "title": "I am spaced out tbh. wen cake.",
     "imageUrl": "/hermes.jpg",
     "llm": "chatgpt",
     "phone": "OPTIONAL_COMPANION_PHONE_NUMBER"
