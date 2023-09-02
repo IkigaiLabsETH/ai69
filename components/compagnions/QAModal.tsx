@@ -7,6 +7,8 @@ import {ChatBlock, responseToChatBlocks} from "@/components/compagnions/ChatBloc
 
 var last_name = "";
 
+
+
 export default function QAModal({
   open,
   setOpen,
@@ -37,13 +39,11 @@ export default function QAModal({
     headers: { name: example.name },
   });
 
-  let [blocks, setBlocks] = useState<ChatBlock[] | null>(null)
-
+  let [blocks, setBlocks] = useState<typeof ChatBlock[] | null>(null);
   useEffect(() => {
     // When the completion changes, parse it to multimodal blocks for display.
     if (completion) {
-      setBlocks(responseToChatBlocks(completion))
-    } else {
+      setBlocks(responseToChatBlocks(completion).map((element) => () => element));    } else {
       setBlocks(null)
     }
   }, [completion])
