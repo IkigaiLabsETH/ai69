@@ -5,6 +5,7 @@ import { authMiddleware } from "@clerk/nextjs";
 // TODO - the public route list should only contain /api/text for production
 export default authMiddleware({
   publicRoutes: ["/api(.*)"],
+  ignoredRoutes: ["/((?!api|trpc))(_next|.+\..+)(.*)", "/"]
 });
 
 export const config = {
